@@ -1,0 +1,16 @@
+.profile > img {
+    height: 100px;
+    width: 100px;
+}
+
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

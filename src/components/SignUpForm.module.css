@@ -1,0 +1,38 @@
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  text-align: center;
+}
+
+input {
+  width: 80%;
+  margin: 1rem 0rem;
+}
+
+.form_wrapper {
+  width: 50%;
+}
+
+.login_image {
+  width: 50%;
+}
+
+.signup_wrapper {
+  display: flex;
+  position: fixed;
+  top: 50vh;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.login_image {
+  height: 100%;
+}
+
+.login_image > img {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+}
