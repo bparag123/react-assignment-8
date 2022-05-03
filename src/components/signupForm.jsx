@@ -38,7 +38,10 @@ const SignUpform = () => {
     <div className={classes["signup_wrapper"]}>
       <div className={classes["form_wrapper"]}>
         <form onSubmit={formik.handleSubmit}>
-          <label htmlFor="photo">Photo</label>
+          <label htmlFor="photo" className={classes["file-upload"]}>
+            <div>Photo</div>
+            <div className={classes["plus-btn"]}>+</div>
+          </label>
           <input
             type="file"
             id="photo"
@@ -99,8 +102,12 @@ const SignUpform = () => {
           {formik.touched.confirmPassword && formik.errors.confirmPassword && (
             <p>{formik.errors.confirmPassword}</p>
           )}
-          <button type="submit">Submit</button>
-          <button type="reset" onClick={formik.handleReset}>Reset</button>
+          <div className={classes["btn-list"]}>
+            <button type="submit" className={classes["submit"]}>Submit</button>
+            <button type="reset" className={classes["reset"]} onClick={formik.handleReset}>
+              Reset
+            </button>
+          </div>
         </form>
       </div>
       <div className={classes["login_image"]}>

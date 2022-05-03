@@ -1,14 +1,24 @@
 form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   width: 80%;
-  text-align: center;
+  padding-left: 1rem;
+}
+
+form > p {
+  color: red;
+  font-weight: 600;
+  font-size: small;
 }
 
 input {
+  margin: 0.5rem 0rem;
   width: 80%;
-  margin: 1rem 0rem;
+  line-height: 1.5rem;
+  background-color: blanchedalmond;
+  border: 1px solid burlywood;
+  border-radius: 0.2rem;
 }
 
 .form_wrapper {
@@ -21,7 +31,7 @@ input {
 
 .signup_wrapper {
   display: flex;
-  position: fixed;
+  position: absolute;
   top: 50vh;
   transform: translateY(-50%);
   width: 100%;
@@ -35,4 +45,53 @@ input {
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
+}
+
+input[type="file"] {
+  display: none;
+}
+.file-upload {
+  display: inline-block;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  left: 40%;
+  transform: translateX(-50%);
+}
+
+.file-upload > * {
+  padding: 0.1rem;
+}
+
+.plus-btn {
+  font-weight: 700;
+}
+
+.btn-list > button {
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+  border: none;
+  margin-right: 0.5rem;
+}
+
+.btn-list > .submit {
+  color: white;
+  background-color: rgb(8, 68, 247);
+  width: 5em;
+}
+
+.btn-list > .submit:hover {
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+.btn-list > .reset {
+  color: white;
+  background-color: rgb(247, 8, 8);
+  width: 5em;
+}
+
+.btn-list > .reset:hover {
+  font-weight: 700;
+  transition: 0.5s;
 }

@@ -24,12 +24,18 @@ const Homepage = () => {
 
   return (
     <div className={classes.profile}>
-      <img className={classes.img} src={photo.url} alt="img" />
-      <div>
-        {`Hello ${name}, you are registered with the email id - ${email} and phone number - ${phoneNumber}`}
+      <div className={classes["img-wrapper"]}>
+        <img className={classes.img} src={photo.url} alt="img" />
       </div>
       <div>
-        <button onClick={handleClick}>Logout</button>
+        <p>
+          {`Hello " ${name} ", you are registered with the email id - " ${email} " and phone number - " ${phoneNumber} "`}
+        </p>
+      </div>
+      <div>
+        <button onClick={handleClick} className={classes["logout-btn"]}>
+          Logout
+        </button>
       </div>
     </div>
   );

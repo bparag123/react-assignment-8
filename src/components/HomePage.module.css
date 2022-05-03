@@ -1,16 +1,36 @@
-.profile > img {
-    height: 100px;
-    width: 100px;
+.img-wrapper{
+    width: 50%;
+    height: 50%;
+}
+
+.img-wrapper > img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.logout-btn {
+  color: white;
+  background-color: rgb(247, 8, 8);
+  border-radius: 0.5rem;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 
-.profile {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.profile p {
+    color: blue;
+    text-align: center;
 }
